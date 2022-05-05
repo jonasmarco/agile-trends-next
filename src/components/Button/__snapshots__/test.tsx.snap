@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render the component correctly 1`] = `
+.c0 {
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 4.4rem;
+}
+
+<button
+  class="c0"
+>
+  <span>
+    Simular agora
+  </span>
+</button>
+`;
