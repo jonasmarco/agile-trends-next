@@ -1,7 +1,7 @@
-import styled, { css, DefaultTheme } from 'styled-components'
+import styled, { css } from 'styled-components'
 import { ButtonProps } from '.'
 
-type WrapperProps = {} & Pick<ButtonProps, 'fullWidth'>
+type WrapperProps = Pick<ButtonProps, 'fullWidth'>
 
 const wrapperSizeModifiers = {
   fullWidth: () => css`
@@ -10,7 +10,7 @@ const wrapperSizeModifiers = {
 }
 
 export const Wrapper = styled.button<WrapperProps>`
-  ${({ theme, fullWidth }) => css`
+  ${({ fullWidth }) => css`
     cursor: pointer;
     height: 4rem;
     padding: 0 4.4rem;

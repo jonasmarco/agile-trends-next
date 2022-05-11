@@ -1,21 +1,22 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true,
+    "node": true
   },
   "settings": {
-    "import/resolve": {
-      "moduleDirectory": ["node_modules", "src"]
+    "react": {
+      "version": "detect"
     }
   },
   "extends": [
-    "eslint-config-airbnb",
+    "plugin:@next/next/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:@next/next/recommended",
-    "airbnb",
-    "airbnb/typescript"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -26,22 +27,16 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "next",
-    "jsx-a11y",
-    "import",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
+    "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [0],
+    "import/extensions": "off"
   }
 }
