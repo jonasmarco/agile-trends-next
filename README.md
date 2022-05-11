@@ -17,6 +17,7 @@ This project uses lot of stuff as:
 - Lint Staged
 - PWA
 - Storybook
+- Cypress
 
 and more are to come...
 
@@ -46,3 +47,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `test:watch`: runs jest in watch mode
 - `storybook`: runs storybook on localhost:6006
 - `build-storybook`: create the build version of storybook
+- `cy:open`: runs cypress UI
+- `cy:run`: runs headless cypress (in terminal)
