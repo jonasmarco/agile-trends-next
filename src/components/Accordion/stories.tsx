@@ -6,4 +6,4 @@ export default {
   component: Accordion
 } as Meta
 
-export const Default: Story = () => <Accordion />
+export const Default: Story = () => <Accordion title="Teste">Teste</Accordion>
