@@ -1,19 +1,36 @@
 import React from 'react'
 
-import { HomeProps } from 'types/home'
+import Accordion from 'components/Accordion'
 
 import * as S from './styles'
+import Link from 'next/link'
 
-const Home = ({ title }: HomeProps) => {
+const Home = () => {
   return (
     <S.Container>
-      <S.Title>{title}</S.Title>
+      <S.ChartBox></S.ChartBox>
+      <S.MenuBox>
+        <Accordion title="Control 1">
+          <Link href="/">Backlog</Link>
+          <Link href="/">Analysis Active</Link>
+          <Link href="/">Analysis Done</Link>
+          <Link href="/">Teting</Link>
+        </Accordion>
+        <Accordion title="Control 1">
+          <Link href="/">Backlog</Link>
+          <Link href="/">Analysis Active</Link>
+          <Link href="/">Analysis Done</Link>
+          <Link href="/">Teting</Link>
+        </Accordion>
+        <Accordion title="Control 1">
+          <Link href="/">Backlog</Link>
+          <Link href="/">Analysis Active</Link>
+          <Link href="/">Analysis Done</Link>
+          <Link href="/">Teting</Link>
+        </Accordion>
+      </S.MenuBox>
     </S.Container>
   )
-}
-
-Home.defaultProps = {
-  title: 'Olá mundo!'
 }
 
 export default Home

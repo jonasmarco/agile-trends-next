@@ -1,10 +1,17 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.main`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+  display: flex;
 `
-export const Title = styled.h1`
-  text-transform: uppercase;
+export const ChartBox = styled.div`
+  width: 80%;
+`
+
+export const MenuBox = styled.div`
+  ${({ theme }) => css`
+    background-color: ${theme.colors.lightGray};
+    min-height: calc(100vh - 6rem);
+    padding: 3rem;
+    width: 20%;
+  `}
 `

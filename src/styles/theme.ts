@@ -32,6 +32,7 @@ export default {
     primary: '#5B31E1',
     secondary: '#8737E1',
     mainBg: '#1E1923',
+    black: '#000000',
     white: '#ffffff',
     gray: '#B4B0B9',
     lightGray: '#5E5A62',
