@@ -1,4 +1,4 @@
-import Login from 'templates/Login'
+import Login from 'templates/Home'
 
 export default function Index() {
   return <Login />

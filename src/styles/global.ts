@@ -70,11 +70,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${theme.font.sizes.medium};
     }
 
-    #body,
-    #__next {
-      background-color: ${theme.colors.mainBg};
-    }
-
     a {
       color: ${theme.colors.white};
       font-size: ${theme.font.sizes.xsmall};

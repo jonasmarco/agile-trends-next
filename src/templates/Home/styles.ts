@@ -5,3 +5,6 @@ export const Container = styled.main`
   margin: 0 auto;
   padding: 0 10px;
 `
+export const Title = styled.h1`
+  text-transform: uppercase;
+`
