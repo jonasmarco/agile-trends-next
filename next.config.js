@@ -3,6 +3,9 @@ const withPWA = require('next-pwa')
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = withPWA({
+  experimental: {
+    styledComponents: true
+  },
   images: {
     domains: ['source.unsplash.com', 'picsum.photos', 'localhost'],
     formats: ['image/webp']

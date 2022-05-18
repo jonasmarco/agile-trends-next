@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Accordion from 'components/Accordion'
+import Chart from 'components/Chart'
 
 import * as S from './styles'
 import Link from 'next/link'
@@ -8,7 +9,9 @@ import Link from 'next/link'
 const Home = () => {
   return (
     <S.Container>
-      <S.ChartBox></S.ChartBox>
+      <S.ChartBox>
+        <Chart />
+      </S.ChartBox>
       <S.MenuBox>
         <Accordion title="Control 1">
           <Link href="/">Backlog</Link>

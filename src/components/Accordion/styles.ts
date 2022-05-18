@@ -59,6 +59,9 @@ export const AccordionContent = styled.div`
       color: ${theme.colors.black};
       display: block;
       font-size: ${theme.font.sizes.medium};
+      &:hover {
+        text-decoration: underline;
+      }
     }
   `}
 `
