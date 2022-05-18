@@ -1,7 +1,10 @@
 import styled, { css } from 'styled-components'
 
+import { slideUpDown } from 'styles/animations'
+
 export const Wrapper = styled.main`
   ${({ theme }) => css`
+    animation: ${slideUpDown} 750ms ease-in-out;
     align-items: center;
     background-color: ${theme.colors.gray};
     display: flex;
